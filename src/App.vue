@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="https://vuejs.org/images/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Regalos:</h1>
+    <GiftsList v-bind:gifts="['PlayStation 5', 'Ipad', 'Componentes']" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GiftsList from './components/GiftsList.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    GiftsList,
+  },
+};
 </script>
 
 <style>
